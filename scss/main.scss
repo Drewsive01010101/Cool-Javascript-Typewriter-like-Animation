@@ -1,0 +1,219 @@
+
+@import 'primary';
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+ 
+}
+html{overflow: hidden;}
+
+body{
+  background-color:#3b5998;
+  font-family: 'Lato', sans-serif;
+  
+}
+
+
+
+#main-nav{
+  display:flex;
+  justify-content: space-between;
+  h2{color:$white-color;
+  cursor: pointer;
+  }
+  padding:1.5rem;
+  
+} 
+
+#main-id{
+display: flex;
+
+
+}
+
+#main-id li{
+  margin-right:1rem;
+  list-style-type: none;
+}
+#main-id li a {
+  text-decoration: none;
+  color:$white-color;
+  font-size: 1.2rem;
+  padding:5px;
+  border-radius: 10px;
+ 
+  &:hover{
+    background-color: $white-color;
+    color:#3b5998;
+  }
+}
+
+#body-home{
+  margin:auto;
+  padding:3rem;
+  margin-top:10rem;
+
+}
+
+// .welcome{
+//   text-align: center;
+//   color:$white-color;
+//   font-family: 'Roboto';
+//   font-size:3rem;
+
+// }
+
+#welcoming-box{
+  
+  display:flex;
+
+ flex-direction:column;
+ align-items: center;
+
+ .welcome{
+  //text-align: center;
+   color:$white-color;
+   font-family: 'Roboto';
+   font-size:3rem;
+}
+.chat-link{
+text-decoration: none;
+  color:$white-color;
+  margin-top:1rem;
+  font-size: 1.2rem;
+  padding:10px;
+  border:$white-color 2px solid;
+  border-radius:10px;
+
+  &:hover{
+    border:$blue-color 2px solid;
+    border-radius:10px;
+    background:$white-color;
+    color:$blue-color;
+  }
+}
+}
+
+.cloud-box{
+  position: absolute;
+  top:15%;
+  left:-50%;
+ // padding:100px;
+  //border:solid white 3px;
+  animation: cloud 150s ease;
+}
+
+@keyframes cloud{
+  to{
+    top:15%;
+    left:105%;
+    
+   
+  }
+ 
+    
+}
+.cloud-base{
+  background-color: white;
+  width:150px;
+  height:50px;
+  border-radius: 50px;
+ 
+
+}
+
+.cloud-parts{
+  background-color:white;
+  width:70px;
+  height:50px;
+  border-radius: 50%;
+  bottom:30px;
+  left:13px;
+  position: absolute;
+
+  &::before{
+    content:"";
+    background-color:white;
+    width:80px;
+    height:60px;
+    border-radius: 50%;
+    bottom:3px;
+  left:40px;
+  position: absolute;
+    
+  }
+}
+//we can add class in javascript
+.cloud-box2{
+  position: absolute;
+  top:80%;
+  left:-200%;
+ // padding:100px;
+  //border:solid white 3px;
+  animation: cloud2 300s ease-out;
+}
+
+@keyframes cloud2{
+  to{
+    top:80%;
+    left:150%;
+   
+  }
+ 
+    
+}
+.cloud-base2{
+
+  background-color: white;
+  width:495px;
+  height:50px;
+  border-radius: 50px;
+ 
+
+}
+
+.cloud-parts2{
+  background-color:white;
+  width:200px;
+  height:150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom:15px;
+  left:30%;
+
+
+  &::before{
+    content:"";
+    background-color:white;
+    width:155px;
+    height:100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:4px;
+  left:-128px;
+  transform: rotate(-8deg);
+
+  
+  
+    
+  }
+  &::after{
+    content:"";
+    background-color:white;
+    width:155px;
+    height:100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom:4px;
+  left:175px;
+  transform: rotate(8deg);
+  
+  
+    
+  }
+}
+#name {
+  text-decoration: none;
+}
